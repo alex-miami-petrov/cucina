@@ -77,13 +77,28 @@
           <h2 class="hero-subtitle">
             We know, you will <span class="hero-span">love</span> our product
           </h2>
-          <img
-            src="./img/hero.jpg"
-            alt="bottle"
-            class="hero-img"
-            width="305"
-            height="539"
-          />
+          <picture>
+            <source
+              srcset="./img/hero-1280.png 1x, ./img/hero-1280-2x.png 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/hero-1020.png 1x, ./img/hero-1020-2x.png 2x"
+              media="(min-width: 1020px)"
+            />
+            <source
+              srcset="./img/hero.png 1x, ./img/hero-2x.png 2x"
+              media="(min-width: 415px)"
+            />
+            <img
+              src="./img/hero.png"
+              alt="bottle"
+              class="hero-img"
+              width="305"
+              height="539"
+            />
+          </picture>
+
           <button type="button" class="hero-btn">Buy now</button>
         </div>
       </section>
