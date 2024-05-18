@@ -113,8 +113,91 @@ button {
 /* HERO */
 
 .hero {
-  padding-top: ;
-  padding-bottom: ;
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+
+.hero-mob-wrap {
+  display: flex;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 30px;
+  max-width: 182px;
+  border-left: 1px solid #f3f3f3;
+  padding-left: 8px;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  width: 200px;
+}
+
+.hero-sub-span {
+  letter-spacing: -0.01em;
+}
+.hero-span {
+  font-weight: 600;
+  color: #bc1a1a;
+}
+.hero-img {
+  margin-bottom: 24px;
+}
+.hero-btn {
+  border-radius: 16px;
+  padding: 21px 148px;
+  width: 384px;
+  height: 66px;
+  background-color: rgba(188, 26, 26, 0.2);
+  font-size: 20px;
+  color: #f3f3f3;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.hero-text-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.text-1-wrap {
+  display: flex;
+  align-items: center;
+  padding-right: 22px;
+}
+.hero-text-1 {
+  /*min-width: 125px; */
+}
+.hero-text-span {
+  padding-right: 12px;
+  font-size: 32px;
+}
+
+/* .world {
+  padding-left: 26px;
+} */
+
+.text-2-wrap {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #f3f3f3;
+  padding-left: 22px;
+}
+
+.hero-text-2 {
+}
+.hero-soc-list {
+}
+.hero-soc-item {
+}
+.hero-soc-link {
+}
+.hero-soc-icon {
+  stroke: #f3f3f3;
 }
 
 /*  */
