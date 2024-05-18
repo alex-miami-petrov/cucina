@@ -74,7 +74,7 @@ button {
   }
 }
 
-@media screen and (min-width: 12800px) {
+@media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
     padding-left: 85px;
@@ -84,6 +84,23 @@ button {
 }
 
 /* HEADER */
+
+.header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: linear-gradient(270deg, #6f6666 0%, #100f0f 100%);
+}
+
+.mob-header {
+}
+.nav {
+}
+.logo-mob {
+}
+.mob-menu-btn {
+}
+.mob-menu-icon {
+}
 
 /* HERO */
 
