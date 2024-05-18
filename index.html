@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>food_delivery_service</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- GOOGLE FONTS -->
 
     <link
@@ -20,20 +25,47 @@
     <header class="header">
       <div class="container">
         <div class="mob-header">
-          <nav class="nav">
+          <nav class="mob-header-nav">
             <a href="./index.html" class="logo-link"
               ><img
                 src="./img/logo.png"
                 alt="logo"
                 class="logo-mob"
-                width="31"
-                height="16"
+                width="132"
+                height="32"
             /></a>
             <button type="button" class="mob-menu-btn">
-              <svg class="mob-menu-icon">
+              <svg class="mob-menu-icon" width="31" height="18">
                 <use href="./img/icons.svg#icon-burger"></use>
               </svg>
             </button>
+          </nav>
+        </div>
+        <div class="tablet-header">
+          <nav class="tablet-nav">
+            <a href="./index.html" class="logo-link"
+              ><img
+                src="./img/logo.png"
+                alt="logo"
+                class="logo-mob"
+                width="132"
+                height="32"
+            /></a>
+            <ul class="talet-menu-list">
+              <li class="tab-item">
+                <a href="" class="tab-menu-link">Home</a>
+              </li>
+              <li class="tab-item">
+                <a href="" class="tab-menu-link">Store</a>
+              </li>
+              <li class="tab-item">
+                <a href="" class="tab-menu-link">Recipes</a>
+              </li>
+              <li class="tab-item">
+                <a href="" class="tab-menu-link">Gallery</a>
+              </li>
+            </ul>
+            <button type="button" class="tab-btn">Contact us</button>
           </nav>
         </div>
       </div>
@@ -41,7 +73,18 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title"></h1>
+          <h1 class="hero-title">CUCINA DI CATHERINA</h1>
+          <h2 class="hero-subtitle">
+            We know, you will <span class="hero-span">love</span> our product
+          </h2>
+          <img
+            src="./img/hero.jpg"
+            alt="bottle"
+            class="hero-img"
+            width="305"
+            height="539"
+          />
+          <button type="button" class="hero-btn">Buy now</button>
         </div>
       </section>
       <section class="Products">

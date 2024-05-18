@@ -1,8 +1,10 @@
 body {
-  font-family: ;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  background-color: ;
-  color: ;
+  background-color: #100f0f;
+  color: #f3f3f3;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 h1,
@@ -28,13 +30,6 @@ img {
   height: auto;
 }
 
-.container {
-  width: ;
-  padding-left: ;
-  padding-right: ;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -45,13 +40,6 @@ ul {
   padding-left: 0;
 }
 
-.title {
-  font-weight: ;
-  font-size: ;
-  line-height: ;
-  color: ;
-}
-
 button {
   cursor: pointer;
 }
@@ -59,6 +47,15 @@ button {
 @media screen and (min-width: 320px) and (max-width: 414px) {
   .container {
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .container {
+    max-width: 415px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -88,18 +85,29 @@ button {
 .header {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: linear-gradient(270deg, #6f6666 0%, #100f0f 100%);
+  background-image: linear-gradient(270deg, #6f6666 0%, #100f0f 100%);
 }
 
 .mob-header {
 }
-.nav {
+.mob-header-nav {
+  display: flex;
+  justify-content: space-between;
 }
 .logo-mob {
+  fill: #f3f3f3;
 }
 .mob-menu-btn {
+  background-color: transparent;
+  border: none;
 }
 .mob-menu-icon {
+  stroke-width: 1px;
+  stroke: #f3f3f3;
+}
+
+.tablet-header {
+  display: none;
 }
 
 /* HERO */
@@ -114,3 +122,60 @@ button {
 /*  */
 
 /*  */
+
+/* TABLET */
+
+@media screen and (min-width: 1020px) {
+  .container {
+    max-width: 1020px;
+    padding-left: 47px;
+    padding-right: 47px;
+    margin: 0 auto;
+  }
+
+  .mob-header {
+    display: none;
+  }
+
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .tablet-header {
+    display: unset;
+  }
+
+  .tablet-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-link {
+  }
+  .logo-mob {
+  }
+  .talet-menu-list {
+    display: flex;
+    gap: 52px;
+  }
+  .tab-item {
+  }
+  .tab-menu-link {
+    font-weight: 600;
+  }
+  .tab-btn {
+    border: 1px solid #f3f3f3;
+    border-radius: 16px;
+    width: 160px;
+    height: 40px;
+    font-weight: 800;
+    background-color: transparent;
+    color: #f3f3f3;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+}
