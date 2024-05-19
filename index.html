@@ -169,22 +169,62 @@
       </section>
       <section class="Products">
         <div class="container">
-          <button type="button" class="prod-up-btn">
+          <div class="up-wrap">
+            <button type="button" class="prod-up-btn">
             <svg class="prod-up-icon" width="16" height="16">
               <use href="./img/icons.svg#icon-up"></use>
             </svg>
           </button>
-          <img src="./img/prod-1.png" alt="sauce" class="prod-1-img" width="156" height="156">
-          <h3 class="prod-1-title">Classic sauce</h3>
-          <button type="button" class="prod-1-btn">Buy now</button>
-          <h3 class="prod-2-title">Spicy sauce</h3>
-          <button type="button" class="prod-2-btn">Buy now</button>
-          <img src="./img/prod-2.png" alt="sauce-spicy" class="prod-2-img" width="156" height="156">
-          <button type="button" class="prod-down-btn">
+          </div>
+          
+          <div class="prod-1-wrap">
+            <picture>
+              <source
+                srcset="./img/prod-1-1020.png 1x, ./img/prod-1-1020-2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="./img/prod-1-1020.png 1x, ./img/prod-1-1020-2x.png 2x"
+                media="(min-width: 1020px)"
+              />
+              
+              <img src="./img/prod-1.png" alt="sauce" class="prod-1-img" width="349" height="349">
+            </picture>
+            
+            <div class="prod-1-text-wrap">
+              <h3 class="prod-title">Classic sauce</h3>
+              <p class="prod-tab-text">The most delicate taste of tomatoes, combined with branded spices and white wine, will make your dish incredibly tasty.</p>
+          <button type="button" class="prod-btn">Buy now</button>
+            </div>
+          
+          </div>
+          <div class="prod-2-wrap">
+            <div class="prod-2-text-wrap">
+              <h3 class="prod-title">Spicy sauce</h3>
+              <p class="prod-tab-text tab-text-2">For thrill-seekers, we added hot chili pepper to our sauce, it also reveals all the tastes and aromas of the sauce well.</p>
+          <button type="button" class="prod-btn">Buy now</button>
+            </div>
+                <picture>
+              <source
+                srcset="./img/prod-2-1020.png 1x, ./img/prod-2-1020-2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="./img/prod-2-1020.png 1x, ./img/prod-2-1020-2x.png 2x"
+                media="(min-width: 1020px)"
+              />
+              
+              <img src="./img/prod-2.png" alt="sauce" class="prod-2-img" width="349" height="349">
+            </picture>
+          </div>
+          <div class="down-wrap">
+             <button type="button" class="prod-down-btn">
             <svg class="prod-down-icon" width="16" height="16">
-              <use href="./img/icons.svg#icon-bot"></use>
+              <use href="./img/icons.svg#icon-down"></use>
             </svg>
           </button>
+          </div>
+         
         </div>
       </section>
       <section class="Recipes">
