@@ -146,6 +146,11 @@ button {
 .hero-img {
   margin-bottom: 24px;
 }
+
+.hero-tab-img {
+  display: none;
+}
+
 .hero-btn {
   border-radius: 16px;
   padding: 21px 148px;
@@ -259,6 +264,54 @@ button {
     font-weight: 800;
     background-color: transparent;
     color: #f3f3f3;
+  }
+
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-tab-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 64px;
+    max-width: 388px;
+    margin-bottom: 24px;
+    /* margin-top: 70px; */
+  }
+
+  .hero-subtitle {
+    font-weight: 300;
+    font-size: 36px;
+    margin-bottom: 48px;
+    width: 447px;
+  }
+
+  .hero-btn {
+    font-weight: 500;
+    font-size: 30px;
+    width: 302px;
+    height: 77px;
+    margin-bottom: 48px;
+    padding: 20px 84px;
+  }
+
+  .hero-text-wrap {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 24px;
+  }
+
+  .hero-tab-img {
+    display: unset;
+    margin-bottom: 54px;
   }
 }
 
