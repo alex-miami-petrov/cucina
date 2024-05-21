@@ -174,17 +174,11 @@ button {
   align-items: center;
   padding-right: 22px;
 }
-.hero-text-1 {
-  /*min-width: 125px; */
-}
+
 .hero-text-span {
   padding-right: 12px;
   font-size: 32px;
 }
-
-/* .world {
-  padding-left: 26px;
-} */
 
 .text-2-wrap {
   display: flex;
@@ -309,11 +303,23 @@ button {
   padding-bottom: 20px;
 }
 
+.rec-1-video {
+  position: relative;
+}
+
 .rec-1-btn {
+  position: absolute;
+  bottom: -14%;
+  left: 28%;
   background-color: rgba(243, 243, 243, 0.9);
   border-radius: 94px;
   width: 70px;
   height: 70px;
+  border: none;
+}
+
+.play-icon {
+  margin: 25px 25px;
 }
 
 /*  */
