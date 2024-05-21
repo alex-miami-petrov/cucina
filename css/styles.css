@@ -302,7 +302,19 @@ button {
   fill: #f3f3f3;
 }
 
-/*  */
+/* RECIPES */
+
+.Recipes {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.rec-1-btn {
+  background-color: rgba(243, 243, 243, 0.9);
+  border-radius: 94px;
+  width: 70px;
+  height: 70px;
+}
 
 /*  */
 
