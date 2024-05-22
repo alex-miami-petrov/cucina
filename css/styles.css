@@ -319,6 +319,10 @@ button {
   display: none;
 }
 
+.rec-1-video-desk {
+  display: none;
+}
+
 .rec-1-btn {
   position: absolute;
   /* bottom: -14%;
@@ -547,4 +551,16 @@ button {
 /* DESKTOP */
 
 @media screen and (min-width: 1280px) {
+  .rec-1-video-desk {
+    display: unset;
+    margin-bottom: 16px;
+  }
+
+  .rec-1-video-tab {
+    display: none;
+  }
+
+  .rec-tab-wrap {
+    gap: 100px;
+  }
 }
