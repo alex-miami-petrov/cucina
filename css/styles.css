@@ -303,14 +303,21 @@ button {
   padding-bottom: 20px;
 }
 
+.rec-wrap-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .rec-1-video {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .rec-1-btn {
   position: absolute;
   bottom: -14%;
-  left: 28%;
+  left: 58%;
   background-color: rgba(243, 243, 243, 0.9);
   border-radius: 94px;
   width: 70px;
@@ -320,6 +327,35 @@ button {
 
 .play-icon {
   margin: 25px 25px;
+}
+
+.rec-text {
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 70px;
+}
+
+.rec-wrap-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rec-2-btn {
+  position: absolute;
+  bottom: -14%;
+  left: 58%;
+  background-color: rgba(243, 243, 243, 0.9);
+  border-radius: 94px;
+  width: 70px;
+  height: 70px;
+  border: none;
+}
+
+.rec-text-2 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 70px;
 }
 
 /*  */
