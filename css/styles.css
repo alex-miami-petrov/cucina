@@ -315,15 +315,20 @@ button {
   margin-bottom: 8px;
 }
 
+.rec-1-video-tab {
+  display: none;
+}
+
 .rec-1-btn {
   position: absolute;
-  bottom: -14%;
-  left: 58%;
+  /* bottom: -14%;
+  left: 58%; */
   background-color: rgba(243, 243, 243, 0.9);
   border-radius: 94px;
   width: 70px;
   height: 70px;
   border: none;
+  transform: translate(-120%, 120%);
 }
 
 .play-icon {
@@ -344,8 +349,7 @@ button {
 
 .rec-2-btn {
   position: absolute;
-  bottom: -39.5%;
-  left: 28%;
+  transform: translate(120%, 120%);
   background-color: rgba(243, 243, 243, 0.9);
   border-radius: 94px;
   width: 70px;
@@ -495,6 +499,48 @@ button {
   .prod-title {
     font-weight: 600;
     font-size: 32px;
+  }
+
+  .rec-tab-wrap {
+    display: flex;
+    gap: 30px;
+  }
+
+  .rec-1-video {
+    display: none;
+  }
+
+  .rec-1-video-tab {
+    display: unset;
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  .rec-text {
+    margin-right: 0;
+  }
+
+  .rec-text-2 {
+    margin-left: 0;
+  }
+  .tab {
+    position: relative;
+    align-items: center;
+  }
+
+  .rec-1-btn {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    top: 45%; /* Відцентрувати вертикально */
+    left: 50%; /* Відцентрувати горизонтально */
+  }
+
+  .rec-2-btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%; /* Відцентрувати вертикально */
+    left: 50%; /* Відцентрувати горизонтально */
   }
 }
 
