@@ -307,6 +307,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-bottom: 40px;
 }
 
 .rec-1-video {
@@ -332,7 +333,7 @@ button {
 .rec-text {
   font-weight: 400;
   font-size: 20px;
-  margin-right: 70px;
+  margin-right: 55px;
 }
 
 .rec-wrap-2 {
@@ -343,8 +344,8 @@ button {
 
 .rec-2-btn {
   position: absolute;
-  bottom: -14%;
-  left: 58%;
+  bottom: -39.5%;
+  left: 28%;
   background-color: rgba(243, 243, 243, 0.9);
   border-radius: 94px;
   width: 70px;
@@ -355,7 +356,7 @@ button {
 .rec-text-2 {
   font-weight: 400;
   font-size: 20px;
-  margin-left: 70px;
+  margin-left: 41px;
 }
 
 /*  */
