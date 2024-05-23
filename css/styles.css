@@ -414,14 +414,18 @@ button {
 
 .logo-link {
 }
-.logo-ftr {
+.logo-ftr-mob {
   fill: #f3f3f3;
   /* margin-bottom: 44px; */
 }
-.ftr-wrap {
+.ftr-mob-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.ftr-tab-wrap {
+  display: none;
 }
 
 .menu-contacts-wrap {
@@ -666,9 +670,46 @@ button {
     gap: 42px;
   }
 
+  .footer {
+    padding-top: 24px;
+  }
+
+  .logo-ftr-mob {
+    display: none;
+  }
+
+  .logo-ftr {
+    fill: #f3f3f3;
+    margin-bottom: 44px;
+  }
+
   .policy-text {
     font-size: 14px;
     line-height: 1.21;
+  }
+
+  .ftr-tab-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ftr-mob-wrap {
+    display: none;
+  }
+
+  .ftr-menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-wrap {
+    margin-bottom: 45px;
+  }
+
+  .ftr-soc-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
