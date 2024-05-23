@@ -428,21 +428,13 @@ button {
   display: none;
 }
 
-.menu-contacts-wrap {
-}
-
 .ftr-menu-list {
   display: flex;
   gap: 20px;
   align-items: center;
   margin-bottom: 32px;
 }
-.ftr-menu-item {
-}
-.ftr-menu-link {
-}
-.ftr-soc-list {
-}
+
 .ftr-soc-item {
   margin-bottom: 24px;
 }
@@ -454,10 +446,7 @@ button {
 .contacts {
   font-style: normal;
 }
-.contacts-list {
-}
-.contacts-item {
-}
+
 .contacts-wrap {
   display: flex;
   align-items: center;
@@ -467,8 +456,7 @@ button {
 .contacts-icon {
   fill: #f3f3f3;
 }
-.contacts-link {
-}
+
 .policy-text {
   font-size: 8px;
   line-height: 2.12;
