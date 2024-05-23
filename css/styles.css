@@ -408,15 +408,30 @@ button {
 /* FOOTER */
 
 .footer {
+  padding-top: 20px;
+  padding-bottom: 1px;
 }
 
 .logo-link {
 }
 .logo-ftr {
+  fill: #f3f3f3;
+  /* margin-bottom: 44px; */
 }
 .ftr-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.menu-contacts-wrap {
+}
+
 .ftr-menu-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 32px;
 }
 .ftr-menu-item {
 }
@@ -425,10 +440,12 @@ button {
 .ftr-soc-list {
 }
 .ftr-soc-item {
+  margin-bottom: 24px;
 }
 .ftr-soc-link {
 }
 .ftr-soc-icon {
+  fill: #f3f3f3;
 }
 .contacts {
   font-style: normal;
@@ -438,16 +455,33 @@ button {
 .contacts-item {
 }
 .contacts-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 .contacts-icon {
+  fill: #f3f3f3;
 }
 .contacts-link {
 }
 .policy-text {
+  font-size: 8px;
+  line-height: 2.12;
+  color: #979797;
+  text-align: center;
 }
 .service-link {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
 }
 .privacy-link {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
 }
 
 /* TABLET */
@@ -630,6 +664,11 @@ button {
 
   .gallery-wrap {
     gap: 42px;
+  }
+
+  .policy-text {
+    font-size: 14px;
+    line-height: 1.21;
   }
 }
 
