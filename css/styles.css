@@ -407,6 +407,49 @@ button {
 
 /* FOOTER */
 
+.footer {
+}
+
+.logo-link {
+}
+.logo-ftr {
+}
+.ftr-wrap {
+}
+.ftr-menu-list {
+}
+.ftr-menu-item {
+}
+.ftr-menu-link {
+}
+.ftr-soc-list {
+}
+.ftr-soc-item {
+}
+.ftr-soc-link {
+}
+.ftr-soc-icon {
+}
+.contacts {
+  font-style: normal;
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-wrap {
+}
+.contacts-icon {
+}
+.contacts-link {
+}
+.policy-text {
+}
+.service-link {
+}
+.privacy-link {
+}
+
 /* TABLET */
 
 @media screen and (min-width: 1020px) {
