@@ -558,64 +558,64 @@
         </p>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal-contact">
+        <button type="button" class="m-c-close-btn">
+          <svg class="m-c-close-icon" width="32" height="32">
+            <use href="./img/icons.svg#icon-xxx"></use>
+          </svg>
+        </button>
+        <h2 class="m-c-title m-c-tab-title">
+          Leave your contacts and we will contact you
+        </h2>
 
-    <div class="modal-contact">
-      <button type="button" class="m-c-close-btn">
-        <svg class="m-c-close-icon" width="32" height="32">
-          <use href="./img/icons.svg#icon-xxx"></use>
-        </svg>
-      </button>
-      <h2 class="m-c-title">
-        Leave your contacts <br />
-        and we will contact you
-      </h2>
+        <form id="contactForm" class="m-c-form">
+          <label for="name" class="m-c-label">Name</label>
+          <input
+            type="text"
+            class="m-c-input"
+            id="name"
+            name="name"
+            pattern="[A-Za-z]{1,20}"
+            placeholder="Yuliia "
+            required
+          />
 
-      <form id="contactForm" class="m-c-form">
-        <label for="name" class="m-c-label">Name</label>
-        <input
-          type="text"
-          class="m-c-input"
-          id="name"
-          name="name"
-          pattern="[A-Za-z]{1,20}"
-          placeholder="Yuliia "
-          required
-        /><br /><br />
+          <label for="phone" class="m-c-label">Telephone</label>
+          <input
+            type="tel"
+            class="m-c-input"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="+380"
+            required
+          />
 
-        <label for="phone" class="m-c-label">Telephone</label>
-        <input
-          type="tel"
-          class="m-c-input"
-          id="phone"
-          name="phone"
-          pattern="[0-9]{10}"
-          placeholder="+380"
-          required
-        /><br /><br />
+          <label for="email" class="m-c-label">Email</label>
+          <input
+            type="email"
+            class="m-c-input"
+            id="email"
+            name="email"
+            placeholder="Contact@gmail.com"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            minlength="6"
+            maxlength="50"
+            required
+          />
 
-        <label for="email" class="m-c-label">Email</label>
-        <input
-          type="email"
-          class="m-c-input"
-          id="email"
-          name="email"
-          placeholder="Contact@gmail.com"
-          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-          minlength="6"
-          maxlength="50"
-          required
-        /><br /><br />
+          <label for="user-comment" class="m-c-label"></label>
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            placeholder="How can we help you?"
+            class="m-c-textarea"
+          ></textarea>
 
-        <label for="user-comment" class="m-c-label">Comment</label>
-        <textarea
-          name="user-comment"
-          id="user-comment"
-          placeholder="How can we help you?"
-          class="m-c-textarea"
-        ></textarea>
-
-        <button type="submit" class="m-c-btn">Contact us</button>
-      </form>
+          <button type="submit" class="m-c-btn">Contact us</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

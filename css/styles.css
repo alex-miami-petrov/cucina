@@ -555,12 +555,31 @@ button {
 
 /* MODAL-CONTACT */
 
-.modal-contact {
-  background-color: #100f0f;
-  padding: 16px 24px 60px 35px;
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
+  visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 414px;
+  min-height: 756px;
+  border-radius: 16px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #100f0f;
+  padding: 16px 15px 60px 15px;
 }
 
 .is-open {
@@ -585,6 +604,7 @@ button {
   font-size: 28px;
   text-align: center;
   color: #f3f3f3;
+  max-width: 355px;
 }
 .m-c-form {
   display: flex;
@@ -599,6 +619,7 @@ button {
   width: 384px;
   height: 52px;
   background-color: #100f0f;
+  margin-bottom: 20px;
 }
 
 .m-c-input:placeholder-shown {
@@ -853,6 +874,38 @@ button {
   .ftr-soc-icon {
     width: 24px;
     height: 24px;
+  }
+
+  .modal-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 414px;
+    min-height: 756px;
+    border-radius: 16px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #100f0f;
+    padding: 20px 20px 60px 60px;
+  }
+
+  .m-c-tab-title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    max-width: 410px;
+    margin-right: 40px;
+  }
+
+  .m-c-close-btn {
+    float: right;
+    border: none;
+    background-color: transparent;
+    margin-right: 0px;
+  }
+
+  .m-c-form {
+    margin-left: 20px;
   }
 }
 
