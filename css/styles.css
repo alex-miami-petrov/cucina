@@ -555,6 +555,30 @@ button {
 
 /* MODAL-CONTACT */
 
+.modal-contact {
+  background-color: #100f0f;
+  padding: 16px 24px 60px 35px;
+}
+.m-c-close-btn {
+}
+.m-c-close-icon {
+}
+.m-c-title {
+}
+.m-c-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.m-c-label {
+}
+.m-c-input {
+}
+.m-c-textarea {
+}
+.m-c-btn {
+}
+
 /* TABLET */
 
 @media screen and (min-width: 1020px) {
