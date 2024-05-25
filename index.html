@@ -565,6 +565,42 @@
           <use href="./img/icons.svg#icon-xxx"></use>
         </svg>
       </button>
+      <h2 class="m-c-title">Leave your contacts and we will contact you</h2>
+
+      <form id="contactForm" class="m-c-form">
+        <label for="name" class="m-c-label">Ім'я:</label>
+        <input
+          type="text"
+          class="m-c-input"
+          id="name"
+          name="name"
+          pattern="[A-Za-z]{1,20}"
+          title="Можна ввести лише літери до 20 символів"
+          required
+        /><br /><br />
+
+        <label for="email" class="m-c-label">Email:</label>
+        <input
+          type="email"
+          class="m-c-input"
+          id="email"
+          name="email"
+          required
+        /><br /><br />
+
+        <label for="phone" class="m-c-label">Телефон:</label>
+        <input
+          type="tel"
+          class="m-c-input"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          title="Введіть 10 цифр без додаткових символів"
+          required
+        /><br /><br />
+
+        <button type="submit" class="btn">Відправити</button>
+      </form>
     </div>
   </body>
 </html>
