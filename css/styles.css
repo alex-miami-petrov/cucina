@@ -476,6 +476,68 @@ button {
   color: #fff;
 }
 
+/* MOB-MENU */
+
+.mob-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  top: 0;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px 20px 285px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.m-m-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-link {
+}
+.logo-mob {
+}
+.mob-menu-close-btn {
+  background-color: transparent;
+  border: none;
+}
+.mob-menu-close-icon {
+}
+.m-m-nav {
+}
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.m-m-item {
+}
+.mob-menu-link {
+  font-weight: 600;
+  font-size: 20px;
+  color: #f3f3f3;
+}
+.m-m-btn {
+  border: 1px solid #f3f3f3;
+  border-radius: 16px;
+  width: 160px;
+  height: 40px;
+  font-weight: 800;
+  background-color: transparent;
+  color: #f3f3f3;
+}
+
 /* TABLET */
 
 @media screen and (min-width: 1020px) {
