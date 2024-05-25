@@ -629,7 +629,7 @@ button {
 
 .m-c-textarea {
   border: 1px solid #f3f3f3;
-  border-radius: 16px;
+  border-radius: 5px;
   width: 384px;
   height: 100px;
   background-color: #100f0f;
