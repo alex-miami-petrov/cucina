@@ -481,6 +481,7 @@ button {
 .mob-menu {
   width: 100%;
   height: 100%;
+
   position: fixed;
   display: flex;
   top: 0;
@@ -491,6 +492,13 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  /* position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 250px; 
+  height: 100vh; 
+  background: #333;
+  transition: left 0.3s ease;  */
 }
 
 .is-open {
@@ -503,6 +511,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 .logo-link {
 }
@@ -514,13 +523,16 @@ button {
 }
 .mob-menu-close-icon {
   fill: #f5f5f5;
+  stroke: #f5f5f5;
 }
 .m-m-nav {
 }
 .mob-menu-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 28px;
+  margin-bottom: 40px;
 }
 .m-m-item {
 }
@@ -530,6 +542,8 @@ button {
   color: #f3f3f3;
 }
 .m-m-btn {
+  display: block;
+  margin: 0 auto;
   border: 1px solid #f3f3f3;
   border-radius: 16px;
   width: 160px;
@@ -538,6 +552,8 @@ button {
   background-color: transparent;
   color: #f3f3f3;
 }
+
+/* MODAL-CONTACT */
 
 /* TABLET */
 
