@@ -485,7 +485,7 @@ button {
   display: flex;
   top: 0;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #100f0f;
   padding: 20px 20px 285px 20px;
   overflow: auto;
   opacity: 0;
@@ -513,6 +513,7 @@ button {
   border: none;
 }
 .mob-menu-close-icon {
+  fill: #f5f5f5;
 }
 .m-m-nav {
 }
