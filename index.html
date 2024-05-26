@@ -617,18 +617,19 @@
         </form>
       </div>
     </div>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal-order">
         <button type="button" class="m-o-close-btn">
           <svg class="m-o-close-icon" width="32" height="32">
             <use href="./img/icons.svg#icon-xxx"></use>
           </svg>
         </button>
-        <h2 class="m-o-title m-c-tab-title">Your ordering</h2>
+        <h2 class="m-o-title m-o-tab-title">Your ordering</h2>
 
         <h3 class="m-o-subtitle">Contacts</h3>
 
-        <form id="orderForm" class="m-o-form">
+        <form id="orderform" class="m-o-form">
+          <div class="m-o-input-wrap"></div>
           <label for="surname" class="m-o-label">Surname</label>
           <input
             type="text"
@@ -640,7 +641,7 @@
             required
           />
 
-          <label for="username" class="m-c-label">Name</label>
+          <label for="username" class="m-o-label">Name</label>
           <input
             type="text"
             class="m-o-input"
@@ -672,29 +673,57 @@
             placeholder="Kyiv"
             required
           />
+
+          <h3 class="m-o-subtitle del">Delivery</h3>
+
+          <div class="del-btn-wrap">
+            <button type="button" class="del-1-btn">
+              Delivery to department of Nova Poshta
+            </button>
+            <button type="button" class="del-2-btn">
+              Delivery by courier of Nova Poshta
+            </button>
+          </div>
+
+          <label for="postOfficeSelect" class="select-label"
+            >Select department</label
+          >
+          <select id="postOfficeSelect" class="select-input" required>
+            <option value="" disabled selected hidden>Department</option>
+            <svg class="sel-icon" width="8" height="4">
+              <use href="./img/icons.svg#icon-select-btn"></use>
+            </svg>
+            <option value="office1">Відділення №1</option>
+            <option value="office2">Відділення №2</option>
+            <option value="office3">Відділення №3</option>
+          </select>
+
+          <h3 class="m-o-subtitle">Payment method</h3>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox1" />
+            <label for="checkbox1"
+              >Credit card (Visa, Mastercard, ApplePay)</label
+            >
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox2" />
+            <label for="checkbox2">Cash on delivery</label>
+          </div>
+
+          <button type="button" class="m-o-com-btn">
+            Add a comment to the order
+          </button>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox3" />
+            <label for="checkbox1">Do not call to confirm</label>
+          </div>
+
+          <button type="submit" class="buy-btn">Buy now</button>
         </form>
       </div>
-
-      <h3 class="m-o-subtitle">Delivery</h3>
-
-      <div class="del-btn-wrap">
-        <button type="button" class="del-1-btn">
-          Delivery to department of Nova Poshta
-        </button>
-        <button type="button" class="del-2-btn">
-          Delivery by courier of Nova Poshta
-        </button>
-      </div>
-
-      <label for="postOfficeSelect">Select department</label>
-      <select id="postOfficeSelect" required>
-        <option value="" disabled selected hidden>Department</option>
-        <option value="office1">Відділення №1</option>
-        <option value="office2">Відділення №2</option>
-        <option value="office3">Відділення №3</option>
-      </select>
-
-      <h3 class="m-o-subtitle">Payment method</h3>
     </div>
   </body>
 </html>

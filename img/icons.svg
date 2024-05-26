@@ -74,5 +74,8 @@
 <symbol id="icon-check" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667" d="M30.667 16c0 8.1-6.567 14.667-14.667 14.667s-14.667-6.566-14.667-14.667c0-8.1 6.566-14.667 14.667-14.667s14.667 6.566 14.667 14.667z"></path>
 </symbol>
+<symbol id="icon-select-btn" viewBox="0 0 64 32">
+<path fill="#f3f3f3" style="fill: var(--color1, #f3f3f3)" d="M32 32l-32-32h64l-32 32z"></path>
+</symbol>
 </defs>
 </svg>

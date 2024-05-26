@@ -654,8 +654,114 @@ button {
 
 /* MODAL-ORDER */
 
+.modal-order {
+  padding: 15px 15px 60px 15px;
+}
+.m-o-close-btn {
+  float: right;
+  border: none;
+  background-color: transparent;
+}
+.m-o-close-icon {
+}
+.m-o-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.m-c-tab-title {
+}
+.m-o-subtitle {
+  font-weight: 500;
+  font-size: 24px;
+
+  margin-bottom: 24px;
+}
+
+.del {
+  margin-top: 20px;
+}
+
+.m-o-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-o-label {
+  margin-bottom: 12px;
+}
+.m-o-input {
+  border: 1px solid #f3f3f3;
+  border-radius: 16px;
+  background-color: #100f0f;
+  width: 384px;
+  height: 52px;
+  margin-bottom: 20px;
+}
+
+.m-o-input:placeholder-shown {
+  padding-left: 18px;
+  color: #999ea3;
+}
+
+.del-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.del-1-btn {
+  border: 1px solid #f3f3f3;
+  border-radius: 16px 0 0 16px;
+  width: 192px;
+  height: 74px;
+  text-align: center;
+  color: #2c2c2c;
+  background-color: #f3f3f3;
+
+  padding-left: 31px;
+  padding-right: 31px;
+}
+.del-2-btn {
+  border: 1px solid #f3f3f3;
+  border-radius: 0 16px 16px 0;
+  width: 192px;
+  height: 74px;
+  text-align: center;
+  color: #f3f3f3;
+  background-color: #100f0f;
+  padding-left: 32px;
+  padding-right: 30px;
+}
+
+.select-label {
+  margin-bottom: 12px;
+}
+
+.select-input {
+  border: 1px solid #f3f3f3;
+  border-radius: 16px;
+  width: 384px;
+  height: 52px;
+  background-color: #100f0f;
+}
+
 select:invalid {
   color: #999ea3;
+  padding-left: 16px;
+}
+
+.checkbox {
+}
+.m-o-com-btn {
+}
+.buy-btn {
+}
+
+select:invalid {
+  color: #999ea3;
+  padding-left: 16px;
 }
 
 /* TABLET */
