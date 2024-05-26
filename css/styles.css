@@ -745,6 +745,7 @@ button {
   width: 384px;
   height: 52px;
   background-color: #100f0f;
+  margin-bottom: 40px;
 }
 
 select:invalid {
@@ -752,16 +753,20 @@ select:invalid {
   padding-left: 16px;
 }
 
+.check-label {
+  margin-left: 12px;
+}
+
 .checkbox {
+  border-radius: 100%;
+  fill: #f3f3f3;
+  stroke-width: 1px;
+  stroke: #000;
+  margin-bottom: 20px;
 }
 .m-o-com-btn {
 }
 .buy-btn {
-}
-
-select:invalid {
-  color: #999ea3;
-  padding-left: 16px;
 }
 
 /* TABLET */
