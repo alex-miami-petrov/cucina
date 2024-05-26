@@ -515,7 +515,7 @@
               </li>
             </ul>
           </address>
-          
+
           <ul class="ftr-soc-list">
             <li class="ftr-soc-item">
               <a href="" class="ftr-soc-link">
@@ -614,6 +614,64 @@
           ></textarea>
 
           <button type="submit" class="m-c-btn">Contact us</button>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop">
+      <div class="modal-order">
+        <button type="button" class="m-o-close-btn">
+          <svg class="m-o-close-icon" width="32" height="32">
+            <use href="./img/icons.svg#icon-xxx"></use>
+          </svg>
+        </button>
+        <h2 class="m-o-title m-c-tab-title">Your ordering</h2>
+
+        <h3 class="m-o-subtitle">Contacts</h3>
+
+        <form id="orderForm" class="m-o-form">
+          <label for="surname" class="m-o-label">Surname</label>
+          <input
+            type="text"
+            class="m-o-input"
+            id="surname"
+            name="surname"
+            pattern="[A-Za-z]{1,20}"
+            placeholder="Krutas"
+            required
+          />
+
+          <label for="username" class="m-c-label">Name</label>
+          <input
+            type="text"
+            class="m-o-input"
+            id="username"
+            name="username"
+            pattern="[A-Za-z]{1,20}"
+            placeholder="Yulia"
+            required
+          />
+
+          <label for="userphone" class="m-o-label">Telephone</label>
+          <input
+            type="tel"
+            class="m-o-input"
+            id="userphone"
+            name="userphone"
+            pattern="[0-9]{10}"
+            placeholder="+380"
+            required
+          />
+
+          <label for="city" class="m-o-label">City</label>
+          <input
+            type="text"
+            class="m-o-input"
+            id="city"
+            name="city"
+            pattern="[A-Za-z]{1,20}"
+            placeholder="Kyiv"
+            required
+          />
         </form>
       </div>
     </div>
