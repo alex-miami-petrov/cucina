@@ -800,17 +800,72 @@ select:invalid {
   color: #f3f3f3;
 }
 
-.check-label {
+/* .check-label {
   margin-left: 12px;
+} */
+
+.checkbox-wrap {
+  margin-bottom: 20px;
 }
 
 .checkbox {
-  border-radius: 100%;
+  /* border-radius: 100%;
   fill: #f3f3f3;
   stroke-width: 1px;
   stroke: #000;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
+  display: none;
 }
+
+.check-label {
+  display: flex;
+  align-items: center;
+}
+
+.check-label::before {
+  /* Стилізувати псевдоелемент перед міткою */
+  content: "";
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%; /* Зробити кружок */
+  margin-right: 12px;
+
+  background-color: #2c2c2c; /* Заливка фону */
+}
+
+.checkbox:checked + .check-label::before {
+  /* Змінити стиль для вибраного чекбокса */
+  background-color: #f3f3f3;
+
+  border-color: transparent; /* Колір рамки при виборі */
+}
+
+.checkbox-3 {
+  display: none;
+}
+
+.check-label-3::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #f3f3f3;
+
+  text-align: center;
+  line-height: 1em;
+  margin-right: 0.5em;
+  background-color: transparent; /* Заливка фону */
+}
+
+.checkbox-3:checked + .check-label-3::before {
+  /* Змінити стиль для вибраного чекбокса */
+  color: #fff;
+  background-color: #000;
+}
+
 .m-o-com-btn {
   line-height: 1.4;
   text-decoration: underline;
