@@ -77,5 +77,8 @@
 <symbol id="icon-select-btn" viewBox="0 0 64 32">
 <path fill="#f3f3f3" style="fill: var(--color1, #f3f3f3)" d="M32 32l-32-32h64l-32 32z"></path>
 </symbol>
+<symbol id="icon-checkmark" viewBox="0 0 32 32">
+<path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
+</symbol>
 </defs>
 </svg>

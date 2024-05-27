@@ -44,6 +44,19 @@ button {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @media screen and (min-width: 320px) and (max-width: 414px) {
   .container {
     width: 100%;
@@ -832,23 +845,23 @@ select:invalid {
   border: 6px solid #f3f3f3;
   border-radius: 50%; /* Зробити кружок */
   margin-right: 12px;
-
-  background-color: #2c2c2c; /* Заливка фону */
+  background-color: #f3f3f3;
+  /* background-color: #2c2c2c;  */
 }
 
 .checkbox:checked + .check-label::before {
   /* Змінити стиль для вибраного чекбокса */
-  background-color: #f3f3f3;
-
-  border-color: transparent; /* Колір рамки при виборі */
+  border-color: #f3f3f3;
+  background-color: #2c2c2c;
+  /* border-color: #f3f3f3; */
 }
 
-.checkbox-3 {
+/* .checkbox-3 {
   display: none;
-}
+} */
 
-.check-label-3::before {
-  content: "";
+/* .check-label-3::before {
+  content: "\2713";
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -857,13 +870,42 @@ select:invalid {
   text-align: center;
   line-height: 1em;
   margin-right: 0.5em;
-  background-color: transparent; /* Заливка фону */
+  background-color: #000; 
 }
 
 .checkbox-3:checked + .check-label-3::before {
-  /* Змінити стиль для вибраного чекбокса */
+ 
   color: #fff;
   background-color: #000;
+} */
+
+.modal-checkbox {
+  margin-bottom: 40px;
+}
+
+.modal-label {
+  font-weight: 300;
+  display: flex;
+  align-items: flex-start;
+}
+
+.span-check {
+  display: inline-flex;
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #f3f3f3;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.check-text {
+}
+
+.modal-check:checked + .modal-label .span-check {
+  fill: #f4f4fd;
 }
 
 .m-o-com-btn {
@@ -1149,7 +1191,11 @@ select:invalid {
   }
 
   .modal-order {
-    padding: 35px 60px 60px 60px;
+    padding: 35px 35px 0px 0px;
+  }
+
+  .m-o-content {
+    padding: 0px 60px 60px 60px;
   }
 }
 

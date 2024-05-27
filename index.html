@@ -620,111 +620,139 @@
     <div class="backdrop is-open">
       <div class="modal-order">
         <button type="button" class="m-o-close-btn">
-          <svg class="m-o-close-icon" width="32" height="32">
+          <svg class="m-o-close-icon" width="24" height="24">
             <use href="./img/icons.svg#icon-xxx"></use>
           </svg>
         </button>
-        <h2 class="m-o-title m-o-tab-title">Your ordering</h2>
+        <div class="m-o-content">
+          <h2 class="m-o-title m-o-tab-title">Your ordering</h2>
 
-        <h3 class="m-o-subtitle">Contacts</h3>
+          <h3 class="m-o-subtitle">Contacts</h3>
 
-        <form id="orderform" class="m-o-form">
-          <div class="m-o-input-wrap"></div>
-          <label for="surname" class="m-o-label">Surname</label>
-          <input
-            type="text"
-            class="m-o-input"
-            id="surname"
-            name="surname"
-            pattern="[A-Za-z]{1,20}"
-            placeholder="Krutas"
-            required
-          />
+          <form id="orderform" class="m-o-form">
+            <div class="m-o-input-wrap"></div>
+            <label for="surname" class="m-o-label">Surname</label>
+            <input
+              type="text"
+              class="m-o-input"
+              id="surname"
+              name="surname"
+              pattern="[A-Za-z]{1,20}"
+              placeholder="Krutas"
+              required
+            />
 
-          <label for="username" class="m-o-label">Name</label>
-          <input
-            type="text"
-            class="m-o-input"
-            id="username"
-            name="username"
-            pattern="[A-Za-z]{1,20}"
-            placeholder="Yulia"
-            required
-          />
+            <label for="username" class="m-o-label">Name</label>
+            <input
+              type="text"
+              class="m-o-input"
+              id="username"
+              name="username"
+              pattern="[A-Za-z]{1,20}"
+              placeholder="Yulia"
+              required
+            />
 
-          <label for="userphone" class="m-o-label">Telephone</label>
-          <input
-            type="tel"
-            class="m-o-input"
-            id="userphone"
-            name="userphone"
-            pattern="[0-9]{10}"
-            placeholder="+380"
-            required
-          />
+            <label for="userphone" class="m-o-label">Telephone</label>
+            <input
+              type="tel"
+              class="m-o-input"
+              id="userphone"
+              name="userphone"
+              pattern="[0-9]{10}"
+              placeholder="+380"
+              required
+            />
 
-          <label for="city" class="m-o-label">City</label>
-          <input
-            type="text"
-            class="m-o-input"
-            id="city"
-            name="city"
-            pattern="[A-Za-z]{1,20}"
-            placeholder="Kyiv"
-            required
-          />
+            <label for="city" class="m-o-label">City</label>
+            <input
+              type="text"
+              class="m-o-input"
+              id="city"
+              name="city"
+              pattern="[A-Za-z]{1,20}"
+              placeholder="Kyiv"
+              required
+            />
 
-          <h3 class="m-o-subtitle del">Delivery</h3>
+            <h3 class="m-o-subtitle del">Delivery</h3>
 
-          <div class="del-btn-wrap">
-            <button type="button" class="del-1-btn">
-              Delivery to department of Nova Poshta
-            </button>
-            <button type="button" class="del-2-btn">
-              Delivery by courier of Nova Poshta
-            </button>
-          </div>
+            <div class="del-btn-wrap">
+              <button type="button" class="del-1-btn">
+                Delivery to department of Nova Poshta
+              </button>
+              <button type="button" class="del-2-btn">
+                Delivery by courier of Nova Poshta
+              </button>
+            </div>
 
-          <label for="postOfficeSelect" class="select-label"
-            >Select department</label
-          >
-          <div class="select-wrap">
-            <select id="postOfficeSelect" class="select-input" required>
-              <option value="" disabled selected hidden>Department</option>
-
-              <option value="office1" class="select-item">Відділення №1</option>
-              <option value="office2" class="select-item">Відділення №2</option>
-              <option value="office3" class="select-item">Відділення №3</option>
-            </select>
-          </div>
-
-          <h3 class="m-o-subtitle">Payment method</h3>
-
-          <div class="checkbox-wrap">
-            <input type="checkbox" id="checkbox1" class="checkbox" />
-            <label for="checkbox1" class="check-label"
-              >Credit card (Visa, Mastercard, ApplePay)</label
+            <label for="postOfficeSelect" class="select-label"
+              >Select department</label
             >
-          </div>
+            <div class="select-wrap">
+              <select id="postOfficeSelect" class="select-input" required>
+                <option value="" disabled selected hidden>Department</option>
 
-          <div class="checkbox-wrap">
-            <input type="checkbox" id="checkbox2" class="checkbox" />
-            <label for="checkbox2" class="check-label">Cash on delivery</label>
-          </div>
+                <option value="office1" class="select-item">
+                  Відділення №1
+                </option>
+                <option value="office2" class="select-item">
+                  Відділення №2
+                </option>
+                <option value="office3" class="select-item">
+                  Відділення №3
+                </option>
+              </select>
+            </div>
 
-          <button type="button" class="m-o-com-btn">
-            Add a comment to the order
-          </button>
+            <h3 class="m-o-subtitle">Payment method</h3>
 
-          <div class="checkbox-wrap">
+            <div class="checkbox-wrap">
+              <input type="checkbox" id="checkbox1" class="checkbox" />
+              <label for="checkbox1" class="check-label"
+                >Credit card (Visa, Mastercard, ApplePay)</label
+              >
+            </div>
+
+            <div class="checkbox-wrap">
+              <input type="checkbox" id="checkbox2" class="checkbox" />
+              <label for="checkbox2" class="check-label"
+                >Cash on delivery</label
+              >
+            </div>
+
+            <button type="button" class="m-o-com-btn">
+              Add a comment to the order
+            </button>
+
+            <!-- <div class="checkbox-wrap">
             <input type="checkbox" id="checkbox3" class="checkbox-3" />
             <label for="checkbox3" class="check-label-3"
               >Do not call to confirm</label
             >
-          </div>
+          </div> -->
 
-          <button type="submit" class="buy-btn">Buy now</button>
-        </form>
+            <div class="modal-checkbox">
+              <input
+                type="checkbox"
+                name="call-confirm"
+                id="call-confirm"
+                class="modal-check visually-hidden"
+                value="true"
+              />
+              <label for="call-confirm" class="modal-label check-text"
+                ><span class="span-check"
+                  ><svg class="check-icon" width="10" height="8">
+                    <use
+                      href="./img/icons.svg#icon-checkmark"
+                    ></use></svg></span
+                >Do not call to confirm</label
+              >
+            </div>
+
+            <button type="submit" class="buy-btn">Buy now</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
