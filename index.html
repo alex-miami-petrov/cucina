@@ -688,15 +688,15 @@
           <label for="postOfficeSelect" class="select-label"
             >Select department</label
           >
-          <select id="postOfficeSelect" class="select-input" required>
-            <option value="" disabled selected hidden>Department</option>
-            <!-- <svg class="sel-icon" width="8" height="4">
-              <use href="./img/icons.svg#icon-select-btn"></use>
-            </svg> -->
-            <option value="office1">Відділення №1</option>
-            <option value="office2">Відділення №2</option>
-            <option value="office3">Відділення №3</option>
-          </select>
+          <div class="select-wrap">
+            <select id="postOfficeSelect" class="select-input" required>
+              <option value="" disabled selected hidden>Department</option>
+
+              <option value="office1" class="select-item">Відділення №1</option>
+              <option value="office2" class="select-item">Відділення №2</option>
+              <option value="office3" class="select-item">Відділення №3</option>
+            </select>
+          </div>
 
           <h3 class="m-o-subtitle">Payment method</h3>
 
